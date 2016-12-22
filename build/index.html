@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-    <div id="application">
+    <div id="game-site">
       <header>
         <h1>Play Tic-Tac-Toe!</h1>
       </header>
@@ -41,7 +41,20 @@
           </tr>
         </table>
       </main>
-      
+
+      <button type="button" name="button" class="button" id="show-games-button">
+        Show All Games
+      </button>
+
+      <section id="all-game-info">
+        <h3>Game History</h3>
+      </section>
+
+      <script type="text/template" id="tmpl-cell-rendering">
+        <li class="column cell-rendering">
+          <h1>_</h1>
+        </li>
+      </script>
     </div>
     <script src="/app.bundle.js" charset="utf-8"></script>
   </body>
