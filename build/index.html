@@ -5,57 +5,54 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/app.css">
   </head>
-  <body>
-    <div id="game-site">
-      <header>
-        <h1>Play Tic-Tac-Toe!</h1>
-      </header>
+  <body id="game-site">
+    <header>
+      <h1>Play Tic-Tac-Toe!</h1>
+    </header>
+    <section>
+      <ul id="players" class="row small-up-2">
+        <li class="column" id="player-one-name">Player 1</li>
+        <li class="column" id="player-two-name">Player 2</li>
+      </ul>
+    </section>
 
-      <section>
-        <ul id="players" class="row small-up-2">
-          <li class="column" id="player-one-name">Player 1</li>
-          <li class="column" id="player-two-name">Player 2</li>
-        </ul>
-      </section>
+    <button type="button" name="button" class="button" id="new-game-button">
+      New Game
+    </button>
 
-      <button type="button" name="button" class="button" id="new-game-button">
-        New Game
-      </button>
+    <main id="game-board">
+         <table id="game-table">
+           <tr id="row-one">
+             <td class="square" row="0" col="0"></td>
+             <td class="square v" row="0" col="1"></td>
+             <td class="square" row="0" col="2"></td>
+           </tr>
+           <tr id=row-two>
+             <td class="square h" row="1" col="0"></td>
+             <td class="square v h" row="1" col="1"></td>
+             <td class="square h" row="1" col="2"></td>
+           </tr>
+           <tr id="row-three">
+             <td class="square" row="2" col="0"></td>
+             <td class="square v" row="2" col="1"></td>
+             <td class="square" row="2" col="2"></td>
+           </tr>
+         </table>
+       </main>
 
-      <main id="game-board">
-        <table id="game-table">
-          <tr id="row-one">
-            <td class="square" row="0" col="0"></td>
-            <td class="square v" row="0" col="1"></td>
-            <td class="square" row="0" col="2"></td>
-          </tr>
-          <tr id=row-two>
-            <td class="square h" row="1" col="0"></td>
-            <td class="square v h" row="1" col="1"></td>
-            <td class="square h" row="1" col="2"></td>
-          </tr>
-          <tr id="row-three">
-            <td class="square" row="2" col="0"></td>
-            <td class="square v" row="2" col="1"></td>
-            <td class="square" row="2" col="2"></td>
-          </tr>
-        </table>
-      </main>
+       <button type="button" name="button" class="button" id="show-games-button">
+         Show All Games
+       </button>
+       <section id="all-game-info">
+         <h3>Game History</h3>
+       </section>
 
-      <button type="button" name="button" class="button" id="show-games-button">
-        Show All Games
-      </button>
+    <script type="text/template" id="tmpl-cell-rendering">
+      <li class="column cell-rendering">
+        <h1>_</h1>
+      </li>
+    </script>
 
-      <section id="all-game-info">
-        <h3>Game History</h3>
-      </section>
-
-      <script type="text/template" id="tmpl-cell-rendering">
-        <li class="column cell-rendering">
-          <h1>_</h1>
-        </li>
-      </script>
-    </div>
     <script src="/app.bundle.js" charset="utf-8"></script>
   </body>
 </html>
