@@ -1,14 +1,10 @@
-var Player = function() {
+import Backbone from 'backbone';
 
-};
-
-Player.prototype.setName = function(name) {
-  this.name = name;
-};
-
-Player.prototype.setMark = function(mark) {
-  this.mark = mark;
-  // validation: accept only x or o
-};
+const Player = Backbone.Model.extend({
+  defaults: {
+    name: null,
+    mark: null
+  },
+});
 
 export default Player;
