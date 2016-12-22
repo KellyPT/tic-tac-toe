@@ -1,29 +1,40 @@
-* {
-  margin: 0;
-  padding: 0;
+h1 {
+  background-color: lightyellow;
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+section {
+  background-color: lightgreen;
 }
 
-#board {
-  padding: 0px;
-  margin: 0 auto;
-  margin-top: 25px;
+ul {
+  list-style: none;
 }
 
-#board tr td {
-  width: 80px;
-  height: 80px;
-  border: 1px solid #1c1c1c;
-  font-family: Helvetica;
-  font-size: 30px;
+li {
+  font-size: 2em;
   text-align: center;
 }
 
-#board tr td:hover {
-  background: #e4e4e4;
-  cursor: pointer;
+td {
+  font-size: 3em;
+  text-align: center;
+}
+
+body {
+  margin: 2em;
+}
+
+.square {
+ width: 100px;
+ height: 100px;
+}
+
+.v {
+ border-left: 1px solid black;
+ border-right: 1px solid black;
+}
+
+.h {
+ border-top: 1px solid black;
+ border-bottom: 1px solid black;
 }
